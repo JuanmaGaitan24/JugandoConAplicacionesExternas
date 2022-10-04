@@ -87,7 +87,8 @@ String coordenadas = "38.299191,-5.2712442";
             public void onClick(View view) {
 
                 Intent intent = new Intent(Intent.ACTION_CALL);
-                intent.putExtra(Intent.EXTRA_PHONE_NUMBER, Uri.parse("tel:699658755"));
+                //intent.putExtra(Intent.EXTRA_PHONE_NUMBER, Uri.parse("tel:699658755"));
+                intent.setData(Uri.parse("tel:699658755"));
                 startActivity(intent);
 
             }
