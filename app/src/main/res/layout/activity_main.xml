@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextWeb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="https://elpais.es"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMapa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLanzarWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="38dp"
+        android:text="Lanzar web"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMensaje"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMapa"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonMapa"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/planetatierra"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMensaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonLanzarWeb"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWeb" />
+
+    <Button
+        android:id="@+id/buttonMensaje"
+        android:layout_width="213dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="11dp"
+        android:text="Lanzar WhatsApp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextMail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMapa" />
+
+    <EditText
+        android:id="@+id/editTextMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/editTextAsunto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMensaje" />
+
+    <EditText
+        android:id="@+id/editTextAsunto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCuerpo"
+        app:layout_constraintStart_toStartOf="@+id/editTextMail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMail" />
+
+    <EditText
+        android:id="@+id/editTextCuerpo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEnviarMail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAsunto" />
+
+    <Button
+        android:id="@+id/buttonEnviarMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="34dp"
+        android:text="Enviar Mail"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLlamar"
+        app:layout_constraintStart_toStartOf="@+id/buttonLlamar"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCuerpo" />
+
+    <Button
+        android:id="@+id/buttonLlamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        android:text="@string/Llamar_mama"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEnviarMail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

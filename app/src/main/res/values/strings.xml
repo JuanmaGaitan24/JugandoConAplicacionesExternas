@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JugandoConAplicacionesExternas</string>
+    <string name="saludo">Hola ¿Que tal?</string>
+    <string name="nota_informativa">Elija la aplicacion</string>
+    <string name="lanzar_web">Lanzar Web</string>
+    <string name="Llamar_mama">Llamar a Mama</string>
+</resources>

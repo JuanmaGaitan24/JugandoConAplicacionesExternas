@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JugandoConAplicacionesExternas</string>
+    <string name="saludo">Hello, How are you?</string>
+    <string name="nota_informativa">Choose a App</string>
+    <string name="lanzar_web">Run Web</string>
+    <string name="Llamar_mama">Call MOM</string>
+</resources>
